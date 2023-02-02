@@ -18,9 +18,9 @@ String js = """
 const sleep = m => new Promise(r => setTimeout(r, m));
 (async () => {
     await sleep(3000);
-    var newElement = "<div id='marker'>Marker</div>";
+    var newElement = "<div id='marker' style='display:none'>Marker</div>";
     var bodyElement = document.body;
-    bodyElement.innerHTML = newElement + bodyElement.innerHTML;
+    bodyElement.innerHTML = bodyElement.innerHTML + newElement;
 })();
 """
 
